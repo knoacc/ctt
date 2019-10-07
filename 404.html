@@ -4,10 +4,11 @@
 <button onclick="myFunction()">Redirect!</button>
 <p id="demo"></p>
 <script>
-function myFunction() { 
-  var x = location.hostname.replace("www.catetan.pw");
-  var y = location.pathname;
-  window.location = x + y
+function myFunction() {
+  var x = location.pathname;
+  var y = location.host.replace('www.catetan.pw');
+  var z = x + y;
+window.location('z')
 }
 </script>
 </body>
