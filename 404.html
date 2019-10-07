@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html>
 <body>
-<script type='text/javascript'>
-  var x = location.pathname;
-  var y = "https://catetan.pw/";
-  var z = x + y;
-window.location.replace(z);
-document.write("<a href=&quot;" + z + "&quot;>pindahan ke sini</a>");
+<button onclick="myFunction()">Redirect!</button>
+<p id="demo"></p>
+<script>
+function myFunction() { 
+  var x = location.hostname.replace("www.catetan.pw");
+  var y = location.pathname;
+  window.location = x + y
+}
 </script>
 </body>
 </html>
