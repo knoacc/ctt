@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html>
-<body>
-<button onclick="myFunction()">Redirect!</button>
-<p id="demo"></p>
 <script>
-function myFunction() {
   var x = location.pathname;
-  var y = location.host.replace('www.catetan.pw');
-  var z = y + x;
-window.location('z')
-}
+  window.location.assign("https://www.catetan.pw" + x);
 </script>
-</body>
-</html>
